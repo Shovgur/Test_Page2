@@ -5,11 +5,11 @@ import axios from "axios";
 
 import React from "react";
 
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Filter as Sorting } from "@/components/Filter";
-import { Card, Freelancer } from "@/components/Card";
-import CheckBox1 from "@/components/CheckBox1";
+import { Header } from "../components/Header/Header";
+import { Hero } from "../components/Hero/Hero";
+import { Filter as Sorting } from "../components/Filter/Filter";
+import { Card, Freelancer } from "../components/Card/Card";
+import CheckBox1 from "../components/CheckBox1";
 
 export enum Sort {
   NAME = "Name",
