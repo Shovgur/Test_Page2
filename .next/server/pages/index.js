@@ -1,0 +1,66 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/index";
+exports.ids = ["pages/index"];
+exports.modules = {
+
+/***/ "./pages/index.tsx":
+/*!*************************!*\
+  !*** ./pages/index.tsx ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Sort\": () => (/* binding */ Sort),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"axios\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nvar Sort;\n(function(Sort) {\n    Sort[\"NAME\"] = \"Name\";\n    Sort[\"EXPERIENCE\"] = \"Experience\";\n    Sort[\"CLIENTS\"] = \"Clients\";\n})(Sort || (Sort = {}));\nconst Index = ()=>{\n    const { 0: data1 , 1: setData  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    const { 0: sort , 1: setSort  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(Sort.NAME);\n    const { 0: filters , 1: setFilters  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    const getData = async ()=>{\n        const src = \"https://641713c17107365a7ca40e20.mockapi.io/bestmatch?language=\";\n        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_2___default().get(src);\n        const filteredData = data.filter(({ freelancerType  })=>{\n            if (!filters.length) return true;\n            let flag = false;\n            const frilancerTypeIds = freelancerType.map((item)=>item.id\n            );\n            frilancerTypeIds.forEach((item)=>{\n                if (filters.includes(item)) {\n                    flag = true;\n                    return;\n                }\n            });\n            return flag;\n        });\n        if (sort === Sort.NAME) {\n            const sortedData = filteredData.sort((a, b)=>a.name > b.name ? 1 : -1\n            );\n            setData(sortedData);\n        } else if (sort === Sort.EXPERIENCE) {\n            const sortedData = filteredData.sort((a, b)=>a.experience.value - b.experience.value\n            );\n            setData(sortedData);\n        } else if (sort === Sort.CLIENTS) {\n            const sortedData = filteredData.sort((a, b)=>a.clients.length - b.clients.length\n            );\n            setData(sortedData);\n        } else {\n            setData(filteredData);\n        }\n    };\n    // axios\n    // .get(src)\n    // .then((data) => {\n    //   setData(data.data);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        getData();\n    }, [\n        sort\n    ]);\n    const handleFilters = (newFilters)=>{\n        setFilters(newFilters);\n    };\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n            children: \"Жопа\"\n        }, void 0, false, {\n            fileName: \"/Users/savelijsovgur/Desktop/Test_Page2/pages/index.tsx\",\n            lineNumber: 83,\n            columnNumber: 10\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/Users/savelijsovgur/Desktop/Test_Page2/pages/index.tsx\",\n        lineNumber: 83,\n        columnNumber: 5\n    }, undefined));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQTJDO0FBR2xCO0FBRUE7O1VBUWJJLElBQUk7SUFBSkEsSUFBSSxDQUNkQyxDQUFJLFNBQUcsQ0FBTTtJQURIRCxJQUFJLENBRWRFLENBQVUsZUFBRyxDQUFZO0lBRmZGLElBQUksQ0FHZEcsQ0FBTyxZQUFHLENBQVM7R0FIVEgsSUFBSSxLQUFKQSxJQUFJO0FBTWhCLEtBQUssQ0FBQ0ksS0FBSyxPQUFtQixDQUFDO0lBQzdCLEtBQUssTUFBRUMsS0FBSSxNQUFFQyxPQUFPLE1BQUlULCtDQUFRLENBQWUsQ0FBQyxDQUFDO0lBQ2pELEtBQUssTUFBRVUsSUFBSSxNQUFFQyxPQUFPLE1BQUlYLCtDQUFRLENBQUNHLElBQUksQ0FBQ0MsSUFBSTtJQUMxQyxLQUFLLE1BQUVRLE9BQU8sTUFBRUMsVUFBVSxNQUFJYiwrQ0FBUSxDQUFXLENBQUMsQ0FBQztJQUVuRCxLQUFLLENBQUNjLE9BQU8sYUFBZSxDQUFDO1FBQzNCLEtBQUssQ0FBQ0MsR0FBRyxHQUNQLENBQWlFO1FBQ25FLEtBQUssQ0FBQyxDQUFDLENBQUNQLElBQUksRUFBQyxDQUFDLEdBQUcsS0FBSyxDQUFDUCxnREFBUyxDQUFlYyxHQUFHO1FBRWxELEtBQUssQ0FBQ0UsWUFBWSxHQUFHVCxJQUFJLENBQUNVLE1BQU0sRUFBRSxDQUFDLENBQUNDLGNBQWMsRUFBQyxDQUFDLEdBQUssQ0FBQztZQUN4RCxFQUFFLEdBQUdQLE9BQU8sQ0FBQ1EsTUFBTSxFQUFFLE1BQU0sQ0FBQyxJQUFJO1lBRWhDLEdBQUcsQ0FBQ0MsSUFBSSxHQUFHLEtBQUs7WUFFaEIsS0FBSyxDQUFDQyxnQkFBZ0IsR0FBR0gsY0FBYyxDQUFDSSxHQUFHLEVBQUVDLElBQUksR0FBS0EsSUFBSSxDQUFDQyxFQUFFOztZQUU3REgsZ0JBQWdCLENBQUNJLE9BQU8sRUFBRUYsSUFBSSxHQUFLLENBQUM7Z0JBQ2xDLEVBQUUsRUFBRVosT0FBTyxDQUFDZSxRQUFRLENBQUNILElBQUksR0FBRyxDQUFDO29CQUMzQkgsSUFBSSxHQUFHLElBQUk7b0JBQ1gsTUFBTTtnQkFDUixDQUFDO1lBQ0gsQ0FBQztZQUVELE1BQU0sQ0FBQ0EsSUFBSTtRQUNiLENBQUM7UUFFRCxFQUFFLEVBQUVYLElBQUksS0FBS1AsSUFBSSxDQUFDQyxJQUFJLEVBQUUsQ0FBQztZQUN2QixLQUFLLENBQUN3QixVQUFVLEdBQUdYLFlBQVksQ0FBQ1AsSUFBSSxFQUFFbUIsQ0FBQyxFQUFFQyxDQUFDLEdBQ3hDRCxDQUFDLENBQUNFLElBQUksR0FBR0QsQ0FBQyxDQUFDQyxJQUFJLEdBQUcsQ0FBQyxJQUFJLENBQUM7O1lBRTFCdEIsT0FBTyxDQUFDbUIsVUFBVTtRQUNwQixDQUFDLE1BQU0sRUFBRSxFQUFFbEIsSUFBSSxLQUFLUCxJQUFJLENBQUNFLFVBQVUsRUFBRSxDQUFDO1lBQ3BDLEtBQUssQ0FBQ3VCLFVBQVUsR0FBR1gsWUFBWSxDQUFDUCxJQUFJLEVBQ2pDbUIsQ0FBQyxFQUFFQyxDQUFDLEdBQUtELENBQUMsQ0FBQ0csVUFBVSxDQUFDQyxLQUFLLEdBQUdILENBQUMsQ0FBQ0UsVUFBVSxDQUFDQyxLQUFLOztZQUVuRHhCLE9BQU8sQ0FBQ21CLFVBQVU7UUFDcEIsQ0FBQyxNQUFNLEVBQUUsRUFBRWxCLElBQUksS0FBS1AsSUFBSSxDQUFDRyxPQUFPLEVBQUUsQ0FBQztZQUNqQyxLQUFLLENBQUNzQixVQUFVLEdBQUdYLFlBQVksQ0FBQ1AsSUFBSSxFQUNqQ21CLENBQUMsRUFBRUMsQ0FBQyxHQUFLRCxDQUFDLENBQUNLLE9BQU8sQ0FBQ2QsTUFBTSxHQUFHVSxDQUFDLENBQUNJLE9BQU8sQ0FBQ2QsTUFBTTs7WUFFL0NYLE9BQU8sQ0FBQ21CLFVBQVU7UUFDcEIsQ0FBQyxNQUFNLENBQUM7WUFDTm5CLE9BQU8sQ0FBQ1EsWUFBWTtRQUN0QixDQUFDO0lBQ0gsQ0FBQztJQUVELEVBQVE7SUFDUixFQUFZO0lBQ1osRUFBb0I7SUFDcEIsRUFBd0I7SUFFeEJsQixnREFBUyxLQUFPLENBQUM7UUFDZmUsT0FBTztJQUNULENBQUMsRUFBRSxDQUFDSjtRQUFBQSxJQUFJO0lBQUEsQ0FBQztJQUdULEtBQUssQ0FBQ3lCLGFBQWEsSUFBSUMsVUFBb0IsR0FBSyxDQUFDO1FBQy9DdkIsVUFBVSxDQUFDdUIsVUFBVTtJQUN2QixDQUFDO0lBRUQsTUFBTSw2RUFFSEMsQ0FBRzs4RkFBRUMsQ0FBQztzQkFBQyxDQUFJOzs7Ozs7Ozs7OztBQXFCaEIsQ0FBQztBQUVELGlFQUFlL0IsS0FBSyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbmV4dC1hcHAvLi9wYWdlcy9pbmRleC50c3g/MDdmZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBOZXh0UGFnZSB9IGZyb20gXCJuZXh0XCI7XG5pbXBvcnQgeyBDaGFrcmFQcm92aWRlciwgdGhlbWUsIEZsZXggfSBmcm9tIFwiQGNoYWtyYS11aS9yZWFjdFwiO1xuaW1wb3J0IGF4aW9zIGZyb20gXCJheGlvc1wiO1xuXG5pbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5cbmltcG9ydCB7IEhlYWRlciB9IGZyb20gXCIuLi9jb21wb25lbnRzL0hlYWRlci9IZWFkZXJcIjtcbmltcG9ydCB7IEhlcm8gfSBmcm9tIFwiLi4vY29tcG9uZW50cy9IZXJvL0hlcm9cIjtcbmltcG9ydCB7IEZpbHRlciBhcyBTb3J0aW5nIH0gZnJvbSBcIi4uL2NvbXBvbmVudHMvRmlsdGVyL0ZpbHRlclwiO1xuaW1wb3J0IHsgQ2FyZCwgRnJlZWxhbmNlciB9IGZyb20gXCIuLi9jb21wb25lbnRzL0NhcmQvQ2FyZFwiO1xuaW1wb3J0IENoZWNrQm94MSBmcm9tIFwiLi4vY29tcG9uZW50cy9DaGVja0JveDFcIjtcblxuZXhwb3J0IGVudW0gU29ydCB7XG4gIE5BTUUgPSBcIk5hbWVcIixcbiAgRVhQRVJJRU5DRSA9IFwiRXhwZXJpZW5jZVwiLFxuICBDTElFTlRTID0gXCJDbGllbnRzXCIsXG59XG5cbmNvbnN0IEluZGV4OiBOZXh0UGFnZSA9ICgpID0+IHtcbiAgY29uc3QgW2RhdGEsIHNldERhdGFdID0gdXNlU3RhdGU8RnJlZWxhbmNlcltdPihbXSk7XG4gIGNvbnN0IFtzb3J0LCBzZXRTb3J0XSA9IHVzZVN0YXRlKFNvcnQuTkFNRSk7XG4gIGNvbnN0IFtmaWx0ZXJzLCBzZXRGaWx0ZXJzXSA9IHVzZVN0YXRlPG51bWJlcltdPihbXSk7XG5cbiAgY29uc3QgZ2V0RGF0YSA9IGFzeW5jICgpID0+IHtcbiAgICBjb25zdCBzcmMgPVxuICAgICAgXCJodHRwczovLzY0MTcxM2MxNzEwNzM2NWE3Y2E0MGUyMC5tb2NrYXBpLmlvL2Jlc3RtYXRjaD9sYW5ndWFnZT1cIjtcbiAgICBjb25zdCB7IGRhdGEgfSA9IGF3YWl0IGF4aW9zLmdldDxGcmVlbGFuY2VyW10+KHNyYyk7XG5cbiAgICBjb25zdCBmaWx0ZXJlZERhdGEgPSBkYXRhLmZpbHRlcigoeyBmcmVlbGFuY2VyVHlwZSB9KSA9PiB7XG4gICAgICBpZiAoIWZpbHRlcnMubGVuZ3RoKSByZXR1cm4gdHJ1ZTtcblxuICAgICAgbGV0IGZsYWcgPSBmYWxzZTtcblxuICAgICAgY29uc3QgZnJpbGFuY2VyVHlwZUlkcyA9IGZyZWVsYW5jZXJUeXBlLm1hcCgoaXRlbSkgPT4gaXRlbS5pZCk7XG5cbiAgICAgIGZyaWxhbmNlclR5cGVJZHMuZm9yRWFjaCgoaXRlbSkgPT4ge1xuICAgICAgICBpZiAoZmlsdGVycy5pbmNsdWRlcyhpdGVtKSkge1xuICAgICAgICAgIGZsYWcgPSB0cnVlO1xuICAgICAgICAgIHJldHVybjtcbiAgICAgICAgfVxuICAgICAgfSk7XG5cbiAgICAgIHJldHVybiBmbGFnO1xuICAgIH0pO1xuXG4gICAgaWYgKHNvcnQgPT09IFNvcnQuTkFNRSkge1xuICAgICAgY29uc3Qgc29ydGVkRGF0YSA9IGZpbHRlcmVkRGF0YS5zb3J0KChhLCBiKSA9PlxuICAgICAgICBhLm5hbWUgPiBiLm5hbWUgPyAxIDogLTFcbiAgICAgICk7XG4gICAgICBzZXREYXRhKHNvcnRlZERhdGEpO1xuICAgIH0gZWxzZSBpZiAoc29ydCA9PT0gU29ydC5FWFBFUklFTkNFKSB7XG4gICAgICBjb25zdCBzb3J0ZWREYXRhID0gZmlsdGVyZWREYXRhLnNvcnQoXG4gICAgICAgIChhLCBiKSA9PiBhLmV4cGVyaWVuY2UudmFsdWUgLSBiLmV4cGVyaWVuY2UudmFsdWVcbiAgICAgICk7XG4gICAgICBzZXREYXRhKHNvcnRlZERhdGEpO1xuICAgIH0gZWxzZSBpZiAoc29ydCA9PT0gU29ydC5DTElFTlRTKSB7XG4gICAgICBjb25zdCBzb3J0ZWREYXRhID0gZmlsdGVyZWREYXRhLnNvcnQoXG4gICAgICAgIChhLCBiKSA9PiBhLmNsaWVudHMubGVuZ3RoIC0gYi5jbGllbnRzLmxlbmd0aFxuICAgICAgKTtcbiAgICAgIHNldERhdGEoc29ydGVkRGF0YSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHNldERhdGEoZmlsdGVyZWREYXRhKTtcbiAgICB9XG4gIH07XG5cbiAgLy8gYXhpb3NcbiAgLy8gLmdldChzcmMpXG4gIC8vIC50aGVuKChkYXRhKSA9PiB7XG4gIC8vICAgc2V0RGF0YShkYXRhLmRhdGEpO1xuXG4gIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgZ2V0RGF0YSgpO1xuICB9LCBbc29ydF0pO1xuXG5cbiAgY29uc3QgaGFuZGxlRmlsdGVycyA9IChuZXdGaWx0ZXJzOiBudW1iZXJbXSkgPT4ge1xuICAgIHNldEZpbHRlcnMobmV3RmlsdGVycyk7XG4gIH07XG5cbiAgcmV0dXJuIChcblxuICAgIDxkaXY+PHA+0JbQvtC/0LA8L3A+PC9kaXY+IFxuICAgIC8vIDxDaGFrcmFQcm92aWRlciB0aGVtZT17dGhlbWV9PlxuICAgIC8vICAgPEhlYWRlcj48L0hlYWRlcj5cbiAgICAvLyAgIDxGbGV4IGJnQ29sb3I9XCIgI0Y4RkJGRlwiIGRpcmVjdGlvbj1cImNvbHVtblwiIHc9XCIxMDAlXCIgaD1cIjEwMCVcIj5cbiAgICAvLyAgICAgPEhlcm8+PC9IZXJvPlxuXG4gICAgLy8gICAgIDxTb3J0aW5nIHNvcnQ9e3NvcnR9IHNldFNvcnQ9e3NldFNvcnR9IC8+XG4gICAgLy8gICAgIDxGbGV4IGRpcmVjdGlvbj1cInJvd1wiPlxuICAgIC8vICAgICAgIDxGbGV4IGRpcmVjdGlvbj1cImNvbHVtblwiPlxuICAgIC8vICAgICAgICAge2RhdGEubWFwKChpdGVtKSA9PiAoXG4gICAgLy8gICAgICAgICAgIDxDYXJkIGtleT17aXRlbS5pZH0gZGF0YT17aXRlbX0gLz5cbiAgICAvLyAgICAgICAgICkpfVxuICAgIC8vICAgICAgIDwvRmxleD5cbiAgICAvLyAgICAgICA8Q2hlY2tCb3gxXG4gICAgLy8gICAgICAgICBoYW5kbGVGaWx0ZXJzPXtoYW5kbGVGaWx0ZXJzfVxuICAgIC8vICAgICAgICAgaGFuZGxlQXBwbHlGaWx0ZXI9e2dldERhdGF9XG4gICAgLy8gICAgICAgLz5cbiAgICAvLyAgICAgPC9GbGV4PlxuICAgIC8vICAgPC9GbGV4PlxuICAgIC8vIDwvQ2hha3JhUHJvdmlkZXI+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBJbmRleDtcbiJdLCJuYW1lcyI6WyJ1c2VFZmZlY3QiLCJ1c2VTdGF0ZSIsImF4aW9zIiwiUmVhY3QiLCJTb3J0IiwiTkFNRSIsIkVYUEVSSUVOQ0UiLCJDTElFTlRTIiwiSW5kZXgiLCJkYXRhIiwic2V0RGF0YSIsInNvcnQiLCJzZXRTb3J0IiwiZmlsdGVycyIsInNldEZpbHRlcnMiLCJnZXREYXRhIiwic3JjIiwiZ2V0IiwiZmlsdGVyZWREYXRhIiwiZmlsdGVyIiwiZnJlZWxhbmNlclR5cGUiLCJsZW5ndGgiLCJmbGFnIiwiZnJpbGFuY2VyVHlwZUlkcyIsIm1hcCIsIml0ZW0iLCJpZCIsImZvckVhY2giLCJpbmNsdWRlcyIsInNvcnRlZERhdGEiLCJhIiwiYiIsIm5hbWUiLCJleHBlcmllbmNlIiwidmFsdWUiLCJjbGllbnRzIiwiaGFuZGxlRmlsdGVycyIsIm5ld0ZpbHRlcnMiLCJkaXYiLCJwIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/index.tsx\n");
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("axios");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/index.tsx"));
+module.exports = __webpack_exports__;
+
+})();

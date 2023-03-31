@@ -79,27 +79,25 @@ const Index: NextPage = () => {
   };
 
   return (
+    <ChakraProvider theme={theme}>
+      <Header></Header>
+      <Flex bgColor=" #F8FBFF" direction="column" w="100%" h="100%">
+        <Hero></Hero>
 
-    <div><p>Жопа</p></div> 
-    // <ChakraProvider theme={theme}>
-    //   <Header></Header>
-    //   <Flex bgColor=" #F8FBFF" direction="column" w="100%" h="100%">
-    //     <Hero></Hero>
-
-    //     <Sorting sort={sort} setSort={setSort} />
-    //     <Flex direction="row">
-    //       <Flex direction="column">
-    //         {data.map((item) => (
-    //           <Card key={item.id} data={item} />
-    //         ))}
-    //       </Flex>
-    //       <CheckBox1
-    //         handleFilters={handleFilters}
-    //         handleApplyFilter={getData}
-    //       />
-    //     </Flex>
-    //   </Flex>
-    // </ChakraProvider>
+        <Sorting sort={sort} setSort={setSort} />
+        <Flex direction="row">
+          <Flex direction="column">
+            {data.map((item) => (
+              <Card key={item.id} data={item} />
+            ))}
+          </Flex>
+          <CheckBox1
+            handleFilters={handleFilters}
+            handleApplyFilter={getData}
+          />
+        </Flex>
+      </Flex>
+    </ChakraProvider>
   );
 };
 
