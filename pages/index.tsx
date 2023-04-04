@@ -73,7 +73,6 @@ const Index: NextPage = () => {
     getData();
   }, [sort]);
 
-
   const handleFilters = (newFilters: number[]) => {
     setFilters(newFilters);
   };
