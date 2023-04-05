@@ -94,6 +94,7 @@ const Index: NextPage = () => {
             handleFilters={handleFilters}
             handleApplyFilter={getData}
           />
+          
         </Flex>
       </Flex>
     </ChakraProvider>
